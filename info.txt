@@ -1,0 +1,8 @@
+Cores
+#0e0e0e - fundo
+#131313 - barra
+#202020
+#ffc000
+#fcfcfc
+#e7e7e7 - exemplo
+#cdcfd2 - titulos menores
