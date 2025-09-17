@@ -1,6 +1,7 @@
 @import "./variaveis.css";
 .menu-inicio {
   position: sticky;
+  top: 0;
   background-color: var(--barra);
   color: white;
   display: flex;
@@ -8,6 +9,16 @@
   align-items: center;
   padding: 1rem 2rem;
   z-index: 1000;
+  height: 50px;
+  border-bottom: solid 2px var(--purificadores);
+  padding: 0 10px;
+  max-width: 100%;
+}
+
+#img-menu-inicio {
+  margin: 0px;
+  max-width: 48px;
+  max-height: 48px;
 }
 
 .hamburguer {
@@ -15,6 +26,11 @@
   display: flex;
   flex-direction: column;
   gap: 2px;
+  transition: 0.3s ease-in-out;
+}
+
+.hamburguer.active {
+  transform: rotate(90deg);
 }
 
 .hamburguer span {
@@ -25,6 +41,44 @@
 }
 
 .nav-menu {
-  position: fixed;
-  top: 60px;
+  position: absolute;
+  top: 52px;
+  right: 0;
+  background: var(--barra);
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.3s ease-in-out;
+  z-index: 2;
+  max-width: 40%;
+  right: 0;
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 1rem 2rem;
+  color: var(--purificadores);
+}
+
+.nav-menu li a:hover {
+  background-color: var(--contraste);
+}
+
+.nav-menu.active {
+  max-height: 500px;
+  border: 2px solid var(--purificadores);
+  border-top: 0px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-brilho {
+  max-width: 100%;
+}
+
+.img-introduzindo {
+  padding: 10px 0px 20px;
 }
