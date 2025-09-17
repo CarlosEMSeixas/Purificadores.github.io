@@ -1,0 +1,44 @@
+@import "./variaveis.css";
+html {
+  background-color: var(--fundo);
+  padding: 0px;
+  border: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  font-family: Oswald, Arial, sans-serif;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 2.25rem;
+  font-weight: 700;
+  font-family: Oswald, Arial, sans-serif;
+  color: var(--purificadores);
+}
+
+h2 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: Oswald, Arial, sans-serif;
+  color: var(--purificadores);
+}
+
+h3 {
+  font-size: 1rem;
+  font-weight: 700;
+  font-family: Oswald, Arial, sans-serif;
+}
+
+p {
+  font-size: 1rem;
+  font-family: Oswald, Arial, sans-serif;
+}

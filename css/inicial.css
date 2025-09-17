@@ -1,0 +1,32 @@
+@import "./variaveis.css";
+
+.imagem_inicial {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+img {
+  margin: 6rem 0 20px;
+  width: 350px;
+  grid-column: 2;
+}
+
+.inicial_menu {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.button-inicial {
+  background-color: var(--purificadores);
+  padding: 10px;
+  border-radius: 4px;
+  color: var(--barra);
+  font-size: 1.25rem;
+}
+
+.button-inicial:hover {
+  background-color: var(--contraste);
+  color: var(--purificadores);
+}
